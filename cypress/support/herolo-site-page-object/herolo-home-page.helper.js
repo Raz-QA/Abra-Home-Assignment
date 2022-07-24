@@ -190,12 +190,12 @@ export default class heroloHomePageHelperFunctions {
       }
     }
     cy.scrollToElement(formTypeLocator);
-    let invalidEmailInput = this.typeInvalidPhoneNumberInput();
+    let invalidEmailInput = this.typeInvalidEmailInput();
     cy.get(formTypeLocator)
       .find(formTypeEmailLocator)
       .clear({ force: true })
 
-      .type(this.typeInvalidEmailInput(), {
+      .type(invalidEmailInput, {
         force: true,
       });
     cy.wrap(invalidEmailInput).as("chosenInvalidEmailInput");
@@ -299,6 +299,9 @@ export default class heroloHomePageHelperFunctions {
     }
 
     cy.scrollToElement(formTypeLocator);
+    let invalidEmailInput = invalidEmailValues.blankField;
+    let invalidPhoneNumberInput = invalidPhoneNumberValues.blankField;
+    
     cy.get(formTypeLocator).find(formTypeNameLocator).clear({ force: true });
     cy.get(formTypeLocator).find(formTypeEmailLocator).clear({ force: true });
     if (formType === contactUsFormTypes.SECTION) {
@@ -309,6 +312,9 @@ export default class heroloHomePageHelperFunctions {
     cy.get(formTypeLocator).find(formTypePhoneLocator).clear({ force: true });
 
     cy.get(formTypeLocator).find(confirmBtnLocator).click({ force: true });
+
+    cy.wrap(invalidEmailInput).as("chosenInvalidEmailInput");
+    cy.wrap(invalidPhoneNumberInput).as("chosenInvalidPhoneNumberInput");
   }
 
   typeInvalidNameInput() {

@@ -168,7 +168,7 @@ describe("Filling Contact Us Forms", () => {
   describe("Contact Us Form - (Contact Us Pop Up)", () => {
     it("Send Contact Info", () => {
       // Act
-      cy.wait(60000);
+      cy.wait(30000);
       heroloHomePage.sendUserContactInfo(contactUsFormTypes.POP_UP);
 
       // Assert
