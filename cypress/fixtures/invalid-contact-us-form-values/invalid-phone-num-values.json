@@ -1,0 +1,9 @@
+{
+    "containLetters":"abcde",
+    "containSpecialChars": "!@#$%",
+    "contain":"string@gmailcom",
+    "lessThan10":"05123456",
+    "moreThan10":"051234567890",
+    "allDigitsZero":"0000000000",
+    "blankField":" "
+  }

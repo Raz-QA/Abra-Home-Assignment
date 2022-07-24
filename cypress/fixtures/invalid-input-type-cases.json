@@ -1,0 +1,7 @@
+{
+    "INVALID_NAME":"invalidName",
+    "INVALID_EMAIL":"invalidEmail",
+    "INVALID_COMPANY_NAME":"invalidCompanyName",
+    "INVALID_PHONE_NUMBER":"invalidPhoneNumber",
+    "EMPTY_FORM":"emptyForm"
+    }

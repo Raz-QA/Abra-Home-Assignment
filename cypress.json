@@ -1,0 +1,6 @@
+{
+    "baseUrl":"https://automation.herolo.co.il/",
+    "chromeWebSecurity": false,
+    "viewportWidth": 1366,
+    "viewportHeight":  768
+}

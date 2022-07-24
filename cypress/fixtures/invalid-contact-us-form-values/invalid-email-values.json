@@ -1,0 +1,12 @@
+{
+  "missing@":"stringgmail.com",
+  "double@": "string@@gmail.com",
+  "missingPoint":"string@gmailcom",
+  "doublePoint":"string@gmail..com",
+  "containPlus":"string+@gmail.com",
+  "containDash":"string-@gmail.com",
+  "containUnderScore":"string_@gmail.com",
+  "missingEmailUsername":"@gmail.com",
+  "missingEmaildDomain":"string@.com",
+  "blankField":" "
+}
